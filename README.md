@@ -6,17 +6,17 @@ COVID-19的影響下，近年的口罩政策，無法快速地解除戴口罩的
 
 # -Components
 Hardward
-Raspberry Pi 3 *1
-Logitech Webcam *1
-12V Switching Power Supply *1
+Raspberry Pi 4 *1
+Sony Webcam *1
 Jumper wires
-breadboard
-12V DC Dosing Pump Peristaltic *6
-Food Grade Silicone Tubing *3m
-8 Channel DC 5V Relay Module *1
+breadboard *1
+LED red *1 , green *1
 power cable *1
+
+
 Software
 Python 3.7
-Open-Vino
+Tensorflow 2.1
+
 Python Telegram Bot
 Accessories
