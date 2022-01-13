@@ -4,7 +4,8 @@ COVID-19的影響下，近年的口罩政策，無法快速地解除戴口罩的
 導致因未正確配戴口罩，經糾正後發生的攸關生命安全的社會事件發生，如在商業空間中，有偵測口罩的設備提醒違規者，可避免掉不必要的寶貴生命失去。
 這是一個基礎型的口罩偵測端點系統，透過WEBCAM設備進行人臉判斷是否有戴口罩警示的功能，初期以edge 方式呈現功能，後續還可以加入上傳雲端做相關分析動作。
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/_uxsrwm8nIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/_uxsrwm8nIA
+
 
 # -使用相關軟硬體設備
 Hardward
