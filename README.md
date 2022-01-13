@@ -39,5 +39,5 @@ imutils
 不戴口罩的人員會在他們的臉上看到一個紅色框，上面寫著“No Face Mask Detected.”
 
 # -樹莓派面罩檢測器項目是如何進行的？
-  # -Part 1 
-  
+  ## -Part 1 
+  Install Dependencies for Raspberry Pi Face Mask Detection 
