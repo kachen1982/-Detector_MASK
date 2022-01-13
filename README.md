@@ -39,5 +39,10 @@ imutils
 不戴口罩的人員會在他們的臉上看到一個紅色框，上面寫著“No Face Mask Detected.”
 
 # -樹莓派面罩檢測器項目是如何進行的？
-  ## -Part 1 
-  Install Dependencies for Raspberry Pi Face Mask Detection 
+  ## -Part 1 安裝相關軟體 OpenCV, imutils, Tensorflow 三個套件
+  OpenCV 用於處理具有機器學習功能的實時圖像和視頻。
+  Imutils 用於加快 Raspberry Pi 上的 OpenCV 計算。
+  Tensorflow  google 開發，是一個開源機器學習平台。
+  1. 安裝RasPI OS，可參考連結 https://www.tomshardware.com/reviews/raspberry-pi-set-up-how-to,6029.html 
+  2. 透過VNC 方式連線， 簡化設備使用，可參考連結 https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
+  
