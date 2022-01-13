@@ -45,4 +45,10 @@ imutils
   Tensorflow  google 開發，是一個開源機器學習平台。
   1. 安裝RasPI OS，可參考連結 https://www.tomshardware.com/reviews/raspberry-pi-set-up-how-to,6029.html 
   2. 透過VNC 方式連線， 簡化設備使用，可參考連結 https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
-  
+  3. 安裝本次使用的WEBCAM 和相關電路設備，並開啟電源確認是否可以透過VNC 連線。
+  4. 安裝 OpenCV。有關安裝 OpenCV 的完整說明，請參閱連結  https://medium.com/linux-on-raspberry-pi4/raspberry-pi%E5%AE%89%E8%A3%9Dopencv-%E5%AE%89%E8%A3%9D%E7%AF%87-1e6e35051680
+  5. 安裝 TensorFlow.
+     sudo pip3 install https://github.com/lhelontra/tensorflow-on-arm/releases/download/v2.1.0/tensorflow-2.1.0-cp37-none-linux_armv7l.whl
+  6. 安裝 imutils。
+     sudo pip3 install imutils
+     
