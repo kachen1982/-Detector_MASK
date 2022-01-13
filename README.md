@@ -51,4 +51,9 @@ imutils
      sudo pip3 install https://github.com/lhelontra/tensorflow-on-arm/releases/download/v2.1.0/tensorflow-2.1.0-cp37-none-linux_armv7l.whl
   6. 安裝 imutils。
      sudo pip3 install imutils
+  7. 參考網路上已有開發的相關detector code, https://github.com/CircuitDigest/Face-Mask_detection
+     和模型驗證，https://circuitdigest.com/microcontroller-projects/face-mask-detection-using-raspberry-pi-and-opencv
+     https://github.com/carolinedunn/face_mask_detection
+  ## -Part 2 測試口罩偵測功能 (利用已訓練好的 Model)
+  
      
