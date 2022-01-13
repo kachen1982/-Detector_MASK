@@ -36,7 +36,12 @@ imutils
 
 當用戶接近您的網絡攝像頭時，利用 TensorFlow、OpenCV 和 imutils 包的 Python 代碼將檢測用戶是否佩戴口罩。 
 戴口罩的人員將在其臉部周圍看到一個綠色框，上面寫著“Thank you. Mask On.” 
+
+![image](Mask_ON.jpg)
+
 不戴口罩的人員會在他們的臉上看到一個紅色框，上面寫著“No Face Mask Detected.”
+
+![image](https://github.com/kachen1982/-Detector_MASK/blob/main/NO_MASK.jpg?raw=true)
 
 # -樹莓派面罩檢測器項目是如何進行的？
   ## -Part 1 安裝相關軟體 OpenCV, imutils, Tensorflow 三個套件
