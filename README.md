@@ -37,11 +37,11 @@ imutils
 當用戶接近您的網絡攝像頭時，利用 TensorFlow、OpenCV 和 imutils 包的 Python 代碼將檢測用戶是否佩戴口罩。 
 戴口罩的人員將在其臉部周圍看到一個綠色框，上面寫著“Thank you. Mask On.” 
 
-![image](Mask_ON.jpg)
+![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_ON_1.png)
 
 不戴口罩的人員會在他們的臉上看到一個紅色框，上面寫著“No Face Mask Detected.”
 
-![image](https://github.com/kachen1982/-Detector_MASK/blob/main/NO_MASK.jpg?raw=true)
+![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_NG_1.png)
 
 # -樹莓派面罩檢測器項目是如何進行的？
   ## -Part 1 安裝相關軟體 OpenCV, imutils, Tensorflow 三個套件
@@ -79,12 +79,12 @@ imutils
   將先跳過模型訓練並運行預製模型來識別您是否戴口罩，利用網路上已流傳的model做使用。<BR/>
   1.開啟終端機視窗<BR/>
   2.運行使用 1,000 多張圖像訓練的預製模型 (mask_detector.model)。 在您的終端更改目錄 (cd) 中，進入目錄(face_mask_detection)。<BR/>  
-      cd face_mask_detection<BR/>
+        cd face_mask_detection<BR/>
           
   3.執行Python 3 代碼開啟網絡攝像頭並啟動口罩演算法。<BR/>  
-      python3 detect_mask_webcam.py<BR/>
+        python3 detect_mask_webcam.py<BR/>
       
-     幾秒鐘後，會看到您的桌面彈出視窗，並看到一個綠色框，指示面罩存在。<BR/>
+  幾秒鐘後，會看到您的桌面彈出視窗，並看到一個綠色框，指示面罩存在。<BR/>
       
   ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_ON_1.png) <BR/>
       
@@ -92,15 +92,34 @@ imutils
    ## -Part 3 加入LED 偵測顯示與警告音效電路<BR/>  
    1. LED 電路配置如下圖檢視:<BR/> 
   ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Breadboard.png)<BR/>
-   2. a. Red LED will be controlled by GPIO14.<BR/>
-      b. Green LED will be controlled by GPIO15.<BR/>
-      c. Buzzer will be activated by GPIO 21.<BR/>
-      d. Connect GND to GND on your Pi.<BR/>
+   2. a. Red LED 透過 GPIO14 控制.<BR/>
+      b. Green LED 透過 GPIO15 控制.<BR/>
+      c. Buzzer 透過 GPIO 21 控制.<BR/>
+      d. 所有的 GND to GND 與 Pi GND 連結.<BR/>
    3. 測試樹莓派口罩檢測系統在同一個終端<BR/>
    4. python3 detect_mask_webcam_buzzer.py<BR/>
    5. 如執行成功，在偵測到戴口罩會亮綠燈，沒戴口罩會亮紅燈，並有蜂鳴器發出的聲音。<BR/>
    [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/_uxsrwm8nIA/0.jpg)](http://www.youtube.com/watch?v=_uxsrwm8nIA)<BR/>
-
+   ## -Part 4 參考資訊來源<BR/>
+   https://opencv.org/releases/<BR/>
+   https://medium.com/linux-on-raspberry-pi4/raspberry-pi%E5%AE%89%E8%A3%9Dopencv-%E5%AE%89%E8%A3%9D%E7%AF%87-1e6e35051680<BR/>
+   https://circuitdigest.com/microcontroller-projects/face-mask-detection-using-raspberry-pi-and-opencv<BR/>
+   https://github.com/CircuitDigest/Face-Mask_detection/tree/main/face_detector  
+   https://www.tensorflow.org/install/pip?hl=zh-tw  
+   https://github.com/carolinedunn/face_mask_detection  
+   https://github.com/jiangsir/FacePI  
+   https://fadyanwar.com/index.php/2020/05/08/an-aiot-example-using-raspberry-pi-and-azure-ai/  
+   https://pypi.org/project/imutils/  
+   https://www.youtube.com/watch?v=GKE7ngh1lLs  
+   https://www.youtube.com/watch?v=DU8Ze-ATVRg  
+   https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
+   https://brain-mentors.com/face-mask-detection-using-opencv-in-python/
+   
+   
+    
+   
+   
+   
       
   
   
