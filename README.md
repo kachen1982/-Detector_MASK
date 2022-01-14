@@ -77,9 +77,7 @@ imutils
 
   ## -Part 2 測試口罩偵測功能 (利用已訓練好的 Model)
   將先跳過模型訓練並運行預製模型來識別您是否戴口罩，利用網路上已流傳的model做使用。
-
     1.開啟終端機視窗
-
     2.運行使用 1,000 多張圖像訓練的預製模型 (mask_detector.model)。 在您的終端更改目錄 (cd) 中，進入目錄(face_mask_detection)。
 
       cd face_mask_detection    
@@ -89,9 +87,7 @@ imutils
       python3 detect_mask_webcam.py
 
       幾秒鐘後，會看到您的桌面彈出視窗，並看到一個綠色框，指示面罩存在。
-
       ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_ON_1.png)
-
    ## -Part 3 加入LED 偵測顯示與警告音效電路
      1. LED 電路配置如下圖檢視:
 
