@@ -103,7 +103,7 @@ imutils
    4. python3 detect_mask_webcam_buzzer.py<BR/>
    5. source code :  
       (請參考本MD附屬檔案 detect_mask_webcam_buzzer.py)
-   6. 如執行成功，在偵測到戴口罩會亮綠燈，沒戴口罩會亮紅燈，並有蜂鳴器發出的聲音。<BR/>
+   6. 如執行成功，在偵測到戴口罩會亮綠燈，沒戴口罩會亮紅燈，並有蜂鳴器發出的聲音。(如下影片演示)<BR/>
    [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/_uxsrwm8nIA/0.jpg)](http://www.youtube.com/watch?v=_uxsrwm8nIA)<BR/>
    ## -Part 4 參考資訊來源<BR/>
    https://opencv.org/releases/<BR/>
