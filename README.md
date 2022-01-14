@@ -4,7 +4,7 @@ COVID-19的影響下，近年的口罩政策，無法快速地解除戴口罩的
 導致因未正確配戴口罩，經糾正後發生的攸關生命安全的社會事件，如在商業空間中，有偵測口罩的設備提醒違規者，可避免掉不必要的寶貴生命失去。
 這是一個基礎型的口罩偵測端點系統，透過WEBCAM設備進行人臉判斷是否有戴口罩警示的功能，初期以edge 方式呈現功能，後續還可以加入上傳雲端做相關分析動作。
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/_uxsrwm8nIA/0.jpg)](http://www.youtube.com/watch?v=_uxsrwm8nIA)
+
 
 
 # -使用相關軟硬體設備
@@ -76,22 +76,30 @@ imutils
     8. 此階段系統安裝Tensorflow 需要確認OS 版本與Tensorflow 支援的版本，此時間點實作驗證，Raspi OS Bulleyes 目前無法搭配Tensorflow 相關本本使用，故在安裝上會無法完成。
 
   ## -Part 2 測試口罩偵測功能 (利用已訓練好的 Model)
-  將先跳過模型訓練並運行預製模型來識別您是否戴口罩，利用網路上已流傳的model做使用。
-    1.開啟終端機視窗
-    2.運行使用 1,000 多張圖像訓練的預製模型 (mask_detector.model)。 在您的終端更改目錄 (cd) 中，進入目錄(face_mask_detection)。
-
-      cd face_mask_detection    
-
-    3.執行Python 3 代碼開啟網絡攝像頭並啟動口罩演算法。
-
-      python3 detect_mask_webcam.py
-
-      幾秒鐘後，會看到您的桌面彈出視窗，並看到一個綠色框，指示面罩存在。
-      ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_ON_1.png)
-   ## -Part 3 加入LED 偵測顯示與警告音效電路
-     1. LED 電路配置如下圖檢視:
-
-     ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_ON_1.png)
+  將先跳過模型訓練並運行預製模型來識別您是否戴口罩，利用網路上已流傳的model做使用。<BR/>
+  1.開啟終端機視窗<BR/>
+  2.運行使用 1,000 多張圖像訓練的預製模型 (mask_detector.model)。 在您的終端更改目錄 (cd) 中，進入目錄(face_mask_detection)。<BR/>  
+      cd face_mask_detection<BR/>
+          
+  3.執行Python 3 代碼開啟網絡攝像頭並啟動口罩演算法。<BR/>  
+      python3 detect_mask_webcam.py<BR/>
+      
+     幾秒鐘後，會看到您的桌面彈出視窗，並看到一個綠色框，指示面罩存在。<BR/>
+      
+  ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Mask_ON_1.png) <BR/>
+      
+      
+   ## -Part 3 加入LED 偵測顯示與警告音效電路<BR/>  
+   1. LED 電路配置如下圖檢視:<BR/> 
+  ![image](https://github.com/kachen1982/-Detector_MASK/blob/main/Breadboard.png)<BR/>
+   2. a. Red LED will be controlled by GPIO14.<BR/>
+      b. Green LED will be controlled by GPIO15.<BR/>
+      c. Buzzer will be activated by GPIO 21.<BR/>
+      d. Connect GND to GND on your Pi.<BR/>
+   3. 測試樹莓派口罩檢測系統在同一個終端<BR/>
+   4. python3 detect_mask_webcam_buzzer.py<BR/>
+   5. 如執行成功，在偵測到戴口罩會亮綠燈，沒戴口罩會亮紅燈，並有蜂鳴器發出的聲音。<BR/>
+   [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/_uxsrwm8nIA/0.jpg)](http://www.youtube.com/watch?v=_uxsrwm8nIA)<BR/>
 
       
   
