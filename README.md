@@ -34,7 +34,7 @@ OPEN CV
 
 imutils
 
-K
+Keras Api
 
 # -Raspberry Pi 面罩檢測器項目如何工作？
 
