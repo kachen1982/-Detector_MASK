@@ -34,6 +34,8 @@ OPEN CV
 
 imutils
 
+K
+
 # -Raspberry Pi 面罩檢測器項目如何工作？
 
 當用戶接近您的網絡攝像頭時，利用 TensorFlow、OpenCV 和 imutils 包的 Python 代碼將檢測用戶是否佩戴口罩。 
